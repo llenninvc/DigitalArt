@@ -20,31 +20,37 @@
     <div class="card">
         <div class="card-header">
 
-            <p class="card-text">
-                @Html.DisplayNameFor(model => model.NombreUsuarios)
-            </p>
-            <p class="card-text">
-                @Html.DisplayNameFor(model => model.DireccionUsuarios)
-            </p>
-                <p class="card-text">
-                @Html.DisplayNameFor(model => model.TelefonoUsuarios)
-                    </p>
-            <p class="card-text">
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </p>
+
+    
+
+
 
         </div>
         <div class="card-body">
 
-
+                <p class="card-text">
+                    @Html.DisplayNameFor(model => model.NombreUsuarios)
+                </p>
             <p class="card-text">
                 @Html.DisplayFor(modelItem => item.NombreUsuarios)
             </p>
+
+                <p class="card-text">
+                    @Html.DisplayNameFor(model => model.DireccionUsuarios)
+                </p>
             <p class="card-text">
                 @Html.DisplayFor(modelItem => item.DireccionUsuarios)
             </p>
+
+                            <p class="card-text">
+                @Html.DisplayNameFor(model => model.TelefonoUsuarios)
+                    </p>
             <p class="card-text">
                 @Html.DisplayFor(modelItem => item.TelefonoUsuarios)
+            </p>
+
+                        <p class="card-text">
+                @Html.DisplayNameFor(model => model.FechaRegistro)
             </p>
             <p class="card-text">
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
