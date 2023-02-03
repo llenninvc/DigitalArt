@@ -8,9 +8,123 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DigitalArt.styles.css" asp-append-version="true" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background: rgba(0, 0, 0,0) url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/882eb67f-8d3f-470f-a043-0225b551ee06/df29ez5-58bd6203-6f4b-4bc6-845b-2db3970576a8.jpg/v1/fill/w_1920,h_1920,q_75,strp/lighthouse_in_the_dark_times_by_daisanvisart_df29ez5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzg4MmViNjdmLThkM2YtNDcwZi1hMDQzLTAyMjViNTUxZWUwNlwvZGYyOWV6NS01OGJkNjIwMy02ZjRiLTRiYzYtODQ1Yi0yZGIzOTcwNTc2YTguanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.D80EW4Y_SeZ6_i3j2tv8MFe_AqTqcxS5ey_UOhji2Bc");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        footer {
+            background: #fff url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25abe526-6c4c-4aa4-a7c3-79061e53b38a/dfng1fz-f011b833-8fd7-47d3-88e9-b68410a87263.jpg/v1/fill/w_1235,h_647,q_70,strp/hut_in_a_woods_by_refiend_dfng1fz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU3MyIsInBhdGgiOiJcL2ZcLzI1YWJlNTI2LTZjNGMtNGFhNC1hN2MzLTc5MDYxZTUzYjM4YVwvZGZuZzFmei1mMDExYjgzMy04ZmQ3LTQ3ZDMtODhlOS1iNjg0MTBhODcyNjMuanBnIiwid2lkdGgiOiI8PTMwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3fg4E5j34aHqwVLw5lJY29wRPGcdSdyiQknS3UDP7E8");
+            color: #fff;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        /* efectos para la etiqueta p*/
+        p {
+            font-family: "Segoe UI";
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+
+        .text{
+            font-family: "Segoe UI";
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+
+       i {
+            font-family: "Segoe UI";
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+        /* efectos para la etiqueta  h2*/
+        h1 {
+            font-family: monospace;
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+        h2 {
+            font-family: monospace;
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+        /* efectos para la etiqueta h4*/
+
+        h4 {
+            font-family: serif;
+            text-align: justify;
+            color: rgb(238, 238, 236);
+        }
+        /* efectos para la etiqueta 3*/
+        h3 {
+            font-family: serif;
+            font-size: 60px;
+            line-height: 32px;
+            letter-spacing: 8px;
+            color: rgb(238, 238, 236);
+            position: relative;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* efectos para la etiqueta  section*/
+
+        section {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        /* efectos para la etiqueta article*/
+        .card {
+            display: flex;
+            flex: 0 1 300px;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 1rem;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7)url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/706229b9-d68f-4fc7-9792-1fb41a6e19fb/devhtgj-28355594-7928-4709-83cb-c6977bbf1a35.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNjIyOWI5LWQ2OGYtNGZjNy05NzkyLTFmYjQxYTZlMTlmYlwvZGV2aHRnai0yODM1NTU5NC03OTI4LTQ3MDktODNjYi1jNjk3N2JiZjFhMzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MBj9oVs5BL7GjiXR4dxvlueHTOpIc9ySfaeHY9TAApM");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+        /* efectos para la etiqueta img*/
+        article img {
+            order: -1;
+            align-self: center;
+        }
+        /* efectos para la etiqueta boton del articulo */
+        button {
+            
+            color: white;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
+  
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DigitalArt</a>
@@ -36,21 +150,42 @@
                 </div>
             </div>
         </nav>
-    </header>
+
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="pb-4">
             @RenderBody()
         </main>
     </div>
-
+</body>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - DigitalArt - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="c">
+                        <h4>Colaborador:</h4>
+                        <i class="pi pi-user"> Luis Lennin</i><br>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="b">
+                        <h4>Contactos:</h4>
+                        <i class="pi pi-whatsapp"> Teléfono:+52 9531332959</i><br>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="a">
+                        <h4>Redes Sociales</h4>
+                        <i class="pi pi-facebook"> Facebook: Art Online</i><br>
+                        <i class="pi pi-twitter"> Twitter:ArtOnline</i><br>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-</body>
+
 </html>
