@@ -9,45 +9,49 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
+
+@foreach (var item in Model)
+{
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">
+
+            <p class="card-text">
                 @Html.DisplayNameFor(model => model.NombreUsuarios)
-            </th>
-            <th>
+            </p>
+            <p class="card-text">
                 @Html.DisplayNameFor(model => model.DireccionUsuarios)
-            </th>
+            </p>
             <th>
                 @Html.DisplayNameFor(model => model.TelefonoUsuarios)
             </th>
-            <th>
+            <p class="card-text">
                 @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
+            </p>
+
+        </div>
+        <div class="card-body">
+
+
+            <p class="card-text">
                 @Html.DisplayFor(modelItem => item.NombreUsuarios)
-            </td>
-            <td>
+            </p>
+            <p class="card-text">
                 @Html.DisplayFor(modelItem => item.DireccionUsuarios)
-            </td>
-            <td>
+            </p>
+            <p class="card-text">
                 @Html.DisplayFor(modelItem => item.TelefonoUsuarios)
-            </td>
-            <td>
+            </p>
+            <p class="card-text">
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
-            </td>
-            <td>
+            </p>
+            <p class="card-text">
                 <a asp-action="Edit" calss="btn btn-warning" asp-route-id="@item.IdUsuarios">Edit</a> |
                 <a asp-action="Details" calss="btn btn-primary" asp-route-id="@item.IdUsuarios">Details</a> |
                 <a asp-action="Delete" calss="btn btn-danger" asp-route-id="@item.IdUsuarios">Delete</a>
-            </td>
-        </tr>
+            </p>
+
+
+        </div>
+    </div>
 }
-    </tbody>
-</table>
