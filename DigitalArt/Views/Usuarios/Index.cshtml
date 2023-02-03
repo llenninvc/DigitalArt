@@ -11,40 +11,6 @@
 </p>
 <style>
 
-    * {
-        box-sizing: border-box;
-    }
-
-    /* efectos para la etiqueta  section*/
-
-    section {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    /* efectos para la etiqueta article*/
-    .card {
-        display: flex;
-        flex: 0 1 300px;
-        flex-direction: column;
-        border: 1px solid black;
-        border-radius: 1rem;
-        padding: 2rem;
-        background: rgba(0, 0, 0, 0.7)url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/706229b9-d68f-4fc7-9792-1fb41a6e19fb/devhtgj-28355594-7928-4709-83cb-c6977bbf1a35.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNjIyOWI5LWQ2OGYtNGZjNy05NzkyLTFmYjQxYTZlMTlmYlwvZGV2aHRnai0yODM1NTU5NC03OTI4LTQ3MDktODNjYi1jNjk3N2JiZjFhMzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MBj9oVs5BL7GjiXR4dxvlueHTOpIc9ySfaeHY9TAApM");
-        height: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: darken;
-    }
-    /* efectos para la etiqueta img*/
-    article img {
-        order: -1;
-        align-self: center;
-    }
-    /* efectos para la etiqueta boton del articulo */
 
 </style>
 <section>
@@ -84,9 +50,9 @@
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
             </p>
             <p class="card-text">
-                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.IdUsuarios">Edit</a> <br>
-                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.IdUsuarios">Details</a> <br>
-                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdUsuarios">Delete</a> <br>
+                    <a asp-action="Edit" type="button" class="btn btn-warning" asp-route-id="@item.IdUsuarios">Edit</a>
+                    <a asp-action="Details" type="button" class="btn btn-primary" asp-route-id="@item.IdUsuarios">Details</a><br><br>
+                    <a asp-action="Delete" type="button" class="btn btn-danger" asp-route-id="@item.IdUsuarios">Delete</a> 
             </p>
 
 
