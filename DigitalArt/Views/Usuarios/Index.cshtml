@@ -10,6 +10,7 @@
     <a asp-action="Create">Create New</a>
 </p>
 <style>
+
     * {
         box-sizing: border-box;
     }
@@ -38,99 +39,12 @@
         background-size: cover;
         background-blend-mode: darken;
     }
-        /* efectos para la etiqueta img*/
-        article img {
-            order: -1;
-            align-self: center;
-        }
-        /* efectos para la etiqueta boton del articulo */
-        article button {
-            background: black;
-            color: white;
-            padding: 0.5rem;
-            border: none;
-            border-radius: 1rem;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-    /* efectos para la etiqueta p*/
-    p {
-        font-family: "Segoe UI";
-        color: rgb(238, 238, 236);
-        text-shadow: 0px 0px #fff;
-        text-align: justify;
+    /* efectos para la etiqueta img*/
+    article img {
+        order: -1;
+        align-self: center;
     }
-    /* efectos para la etiqueta  h2*/
-    h2 {
-        font-family: monospace;
-        color: rgb(238, 238, 236);
-        text-shadow: 0px 0px #fff;
-        text-align: justify;
-    }
-    /* efectos para la etiqueta h4*/
-
-    h4 {
-        text-align: justify;
-    }
-    /* efectos para la etiqueta 3*/
-    h3 {
-        font-family: serif;
-        font-size: 60px;
-        line-height: 32px;
-        letter-spacing: 8px;
-        color: rgb(0, 0, 0);
-        position: relative;
-        text-align: center;
-    }
-
-
-
-
-    /* efectos para la etiqueta footer*/
-    footer {
-        background: rgba(0, 0, 0, 0.7) url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9a36b919-8d56-4915-a7e7-9a4c4160ef7e/de3qhii-abdc29f3-dfab-41f8-93b7-de72458b2f31.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlhMzZiOTE5LThkNTYtNDkxNS1hN2U3LTlhNGM0MTYwZWY3ZVwvZGUzcWhpaS1hYmRjMjlmMy1kZmFiLTQxZjgtOTNiNy1kZTcyNDU4YjJmMzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lvrd1YXPuJWSzfRYQhqZIJklT__vfzDsQRH05t8v3nU");
-        color: #fff;
-        height: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: darken;
-    }
-    /* efectos para la etiqueta ul*/
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: rgb(0, 0, 0);
-    }
-    /* efectos para la etiqueta li*/
-
-    li {
-        float: left;
-        border-right: 1px solid #bbb;
-    }
-        /* efectos para la etiqueta li last-child*/
-        li:last-child {
-            border-right: none;
-        }
-        /* efectos para la etiqueta li a*/
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-            /* efectos para la etiqueta a hover not*/
-            li a:hover:not(.active) {
-                background-color: rgb(255, 211, 0);
-            }
-    /* efectos para la etiqueta active*/
-    .active {
-        background-color: #04AA6D;
-    }
+    /* efectos para la etiqueta boton del articulo */
 
 </style>
 <section>
@@ -146,9 +60,9 @@
             <p class="card-text">
                 @Html.DisplayNameFor(model => model.DireccionUsuarios)
             </p>
-            <th>
+                <p class="card-text">
                 @Html.DisplayNameFor(model => model.TelefonoUsuarios)
-            </th>
+                    </p>
             <p class="card-text">
                 @Html.DisplayNameFor(model => model.FechaRegistro)
             </p>
@@ -170,9 +84,9 @@
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
             </p>
             <p class="card-text">
-                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.IdUsuarios">Edit</a> |
-                <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.IdUsuarios">Details</a> |
-                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdUsuarios">Delete</a>
+                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.IdUsuarios">Edit</a> <br>
+                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.IdUsuarios">Details</a> <br>
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdUsuarios">Delete</a> <br>
             </p>
 
 
@@ -182,3 +96,11 @@
 }
     <br>
 </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

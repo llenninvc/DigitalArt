@@ -8,68 +8,106 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DigitalArt.styles.css" asp-append-version="true" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<style>
-    body {
-        background: rgba(0, 0, 0,0) url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/882eb67f-8d3f-470f-a043-0225b551ee06/df29ez5-58bd6203-6f4b-4bc6-845b-2db3970576a8.jpg/v1/fill/w_1920,h_1920,q_75,strp/lighthouse_in_the_dark_times_by_daisanvisart_df29ez5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzg4MmViNjdmLThkM2YtNDcwZi1hMDQzLTAyMjViNTUxZWUwNlwvZGYyOWV6NS01OGJkNjIwMy02ZjRiLTRiYzYtODQ1Yi0yZGIzOTcwNTc2YTguanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.D80EW4Y_SeZ6_i3j2tv8MFe_AqTqcxS5ey_UOhji2Bc");
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: darken;
-    }
+    <style>
+        body {
+            background: rgba(0, 0, 0,0) url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/882eb67f-8d3f-470f-a043-0225b551ee06/df29ez5-58bd6203-6f4b-4bc6-845b-2db3970576a8.jpg/v1/fill/w_1920,h_1920,q_75,strp/lighthouse_in_the_dark_times_by_daisanvisart_df29ez5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzg4MmViNjdmLThkM2YtNDcwZi1hMDQzLTAyMjViNTUxZWUwNlwvZGYyOWV6NS01OGJkNjIwMy02ZjRiLTRiYzYtODQ1Yi0yZGIzOTcwNTc2YTguanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.D80EW4Y_SeZ6_i3j2tv8MFe_AqTqcxS5ey_UOhji2Bc");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
 
-    footer {
-        background: #fff url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc5eb051-30a6-45b1-805b-0bc97c56f2af/dezg2jj-feda8ac2-c939-41ce-ab40-eacd48066358.jpg/v1/fill/w_1280,h_671,q_75,strp/waiting_there_by_madspartan013_dezg2jj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjcxIiwicGF0aCI6IlwvZlwvYmM1ZWIwNTEtMzBhNi00NWIxLTgwNWItMGJjOTdjNTZmMmFmXC9kZXpnMmpqLWZlZGE4YWMyLWM5MzktNDFjZS1hYjQwLWVhY2Q0ODA2NjM1OC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WZHlSncYETlh7-f3VOBp6BVx_-cJ45Kh3LuuPvVbQt4");
-        color: #fff;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: darken;
-    }
+        footer {
+            background: #fff url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc5eb051-30a6-45b1-805b-0bc97c56f2af/dezg2jj-feda8ac2-c939-41ce-ab40-eacd48066358.jpg/v1/fill/w_1280,h_671,q_75,strp/waiting_there_by_madspartan013_dezg2jj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjcxIiwicGF0aCI6IlwvZlwvYmM1ZWIwNTEtMzBhNi00NWIxLTgwNWItMGJjOTdjNTZmMmFmXC9kZXpnMmpqLWZlZGE4YWMyLWM5MzktNDFjZS1hYjQwLWVhY2Q0ODA2NjM1OC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WZHlSncYETlh7-f3VOBp6BVx_-cJ45Kh3LuuPvVbQt4");
+            color: #fff;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
 
-</style>
+        /* efectos para la etiqueta p*/
+        p {
+            font-family: "Segoe UI";
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+
+        .text{
+            font-family: "Segoe UI";
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+
+       i {
+            font-family: "Segoe UI";
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+        /* efectos para la etiqueta  h2*/
+        h2 {
+            font-family: monospace;
+            color: rgb(238, 238, 236);
+            text-shadow: 0px 0px #fff;
+            text-align: justify;
+        }
+        /* efectos para la etiqueta h4*/
+
+        h4 {
+            text-align: justify;
+        }
+        /* efectos para la etiqueta 3*/
+        h3 {
+            font-family: serif;
+            font-size: 60px;
+            line-height: 32px;
+            letter-spacing: 8px;
+            color: rgb(238, 238, 236);
+            position: relative;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DigitalArt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Artes" asp-action="Index">Artes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Opiniones" asp-action="Index">Opiniones</a>
-                    </li>
-                </ul>
+  
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DigitalArt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Artes" asp-action="Index">Artes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Opiniones" asp-action="Index">Opiniones</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
 
     <div class="container">
-        
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    
 </body>
-<footer>
-
-    <div class="footer-text">
-
+    <footer class="border-top footer text-muted">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-xl-4">
@@ -94,9 +132,10 @@
                 </div>
             </div>
         </div>
-
-    </div>
-</footer>
-
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 
 </html>
