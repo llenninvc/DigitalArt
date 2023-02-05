@@ -153,6 +153,12 @@
             position: relative;
         }
 
+        .neon-button__1 {
+            color: var(--clr-one);
+            border: var(--clr-one) 0.125em solid;
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em --clr-one;
+            box-shadow: inset 0 0 0.5em 0 var(--clr-one), 0 0 0.5em 0 var(--clr-one);
+        }
         .neon-button__2 {
             color: var(--clr-two);
             border: var(--clr-two) 0.125em solid;
@@ -191,6 +197,9 @@
   }
 }
 
+        .neon-button__1::before {
+            background: var(--clr-one);
+        }
 .neon-button__2::before {
   background: var(--clr-two);
 }
@@ -207,6 +216,11 @@
   z-index: -1;
   transition: opacity 100ms linear;
 }
+
+        .neon-button__1::after {
+            box-shadow: 0 0 2em 0.5em var(--clr-one);
+            background-color: var(--clr-one);
+        }
 .neon-button__2::after {
   box-shadow: 0 0 2em 0.5em var(--clr-two);
   background-color: var(--clr-two);
