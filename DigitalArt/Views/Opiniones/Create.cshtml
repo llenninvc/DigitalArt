@@ -3,7 +3,10 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+<div>
+    <a asp-action="Index" class="neon-button neon-button__1">Regrsar a Listar</a>
+</div>
+<br/>
 <h1>Create</h1>
 
 <h4>Opinione</h4>
@@ -23,15 +26,17 @@
                 <span asp-validation-for="DescripcionOpinion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-success" />
             </div>
+            <br />
+            <br />
+            <br />
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<br />
+<br />
+<br />
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
