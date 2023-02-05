@@ -9,7 +9,23 @@
 <p>
     <a asp-action="Create" type="button" class="neon-button neon-button__2">Registrar Arte</a>
 </p>
+<style>
+    .card {
+        display: flex;
+        flex: 0 1 300px;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.7)url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6fb254a1-b5b9-4a24-a4bc-89d3bf39c7e0/dfcs9nf-e771b633-9970-4022-8b0f-06f5dbf938d0.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZmYjI1NGExLWI1YjktNGEyNC1hNGJjLTg5ZDNiZjM5YzdlMFwvZGZjczluZi1lNzcxYjYzMy05OTcwLTQwMjItOGIwZi0wNmY1ZGJmOTM4ZDAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Bmyh_-wYSr_10kuKVb6ySJ0s1A1PntXx5oysHAY1PvY");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+    }
 
+</style>
 <section>
 @foreach (var item in Model)
     {
