@@ -6,7 +6,7 @@
 
 <h1>Eliminar</h1>
 @*función para eliminar un registro*@
-<h3>Estas seguro de eliminar el registro?</h3>
+
 <div>
     <h4>Arte</h4>
     <hr />
@@ -45,7 +45,7 @@
 
     <form asp-action="Delete">
         <input type="hidden" asp-for="IdArte" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Regresar a listar</a>
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a asp-action="Index" type="button" class="btn btn-warning">Regresar a listar</a>
     </form>
 </div>

@@ -18,12 +18,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="NombreOpinion" class="control-label"></label>
-                <input asp-for="NombreOpinion" class="form-control" />
+                <input asp-for="NombreOpinion" class="form-control" pattern="[A-Za-z0-9áéíóú:,\." ]+" />
                 <span asp-validation-for="NombreOpinion" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DescripcionOpinion" class="control-label"></label>
-                <input asp-for="DescripcionOpinion" class="form-control" />
+                <input asp-for="DescripcionOpinion" class="form-control" pattern="[A-Za-z0-9áéíóú:,\." ]+"  />
                 <span asp-validation-for="DescripcionOpinion" class="text-danger"></span>
             </div>
             <br />
