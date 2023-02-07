@@ -5,11 +5,12 @@
 }
 
 <h1>Arte</h1>
-
+@*botón neon para crear arte*@
 <p>
     <a asp-action="Create" type="button" class="neon-button neon-button__2">Registrar Arte</a>
 </p>
 <style>
+    /* Estilo para card de Arte*/
     .card {
         display: flex;
         flex: 0 1 300px;
@@ -26,7 +27,9 @@
     }
 
 </style>
+@*formato de card*@
 <section>
+@*imprime todos los datos de la BD en cards*@
 @foreach (var item in Model)
     {
         <div class="card">
@@ -35,7 +38,7 @@
 
             </div>
                 <div class="card-body">
-     
+@*muestra en la card la descripción y el dato que se trae de la bd  *@          
              <p class="card-text">
                 @Html.DisplayNameFor(model => model.NombreArte) :
                 </p>
@@ -70,19 +73,20 @@
             <p class="card-text">
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
                 </p>
-
+@*muestra los botones de editar,eliminar y detalles*@
              <p class="card-text">
                     <a asp-action="Edit" type="button" class="btn btn-warning" asp-route-id="@item.IdArte">Edit</a> 
                     <a asp-action="Details" type="button" class="btn btn-primary" asp-route-id="@item.IdArte">Details</a> 
                     <a asp-action="Delete" type="button" class="btn btn-danger"  asp-route-id="@item.IdArte">Delete</a>
                         </p>
               </div>
-
+@*imagen del logo de la card*@
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/62142078-a6c3-4fab-9f03-9ede1adbf7d1/de24m6w-7daa02b3-76aa-47fc-875c-c907753606d2.png/v1/crop/w_92,h_92,x_3,y_0,scl_0.10562571756602,strp/rin_by_dav_19_de24m6w-92s.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODcxIiwicGF0aCI6IlwvZlwvNjIxNDIwNzgtYTZjMy00ZmFiLTlmMDMtOWVkZTFhZGJmN2QxXC9kZTI0bTZ3LTdkYWEwMmIzLTc2YWEtNDdmYy04NzVjLWM5MDc3NTM2MDZkMi5wbmciLCJ3aWR0aCI6Ijw9MTAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.tFsvUbXDPJFjtjx_W3bDoMkLV1QCZdRuBwjnTlCl6gU" alt="">
     </div>
 }
     <br>
 </section>
+@*saltos para el formato*@
 <br>
 <br>
 <br>

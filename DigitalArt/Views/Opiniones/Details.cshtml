@@ -10,6 +10,7 @@
     <h4>Opinione</h4>
     <hr />
     <dl class="row">
+@* muestra los detalles de un registro *@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.NombreOpinion)
         </dt>
@@ -31,6 +32,7 @@
     </dl>
 </div>
 <div>
+@*botones para editar y listar*@
     <a asp-action="Edit" asp-route-id="@Model?.IdOpinion" type="button" class="btn btn-warning">Editar</a>
     <a asp-action="Index" type="button" class="btn btn-primary">Regresar a Listar</a>
 </div>

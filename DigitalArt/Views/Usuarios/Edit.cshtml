@@ -13,6 +13,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+@* Función para editar los datos de un registro ya creado *@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdUsuarios" />
@@ -38,6 +39,7 @@
             </div>
             <br />
             <div class="form-group">
+@*botón para guardar cambios *@
                 <input type="submit" value="Save" class="btn  btn-success" />
             </div>
         </form>
@@ -46,8 +48,7 @@
         <br />
     </div>
 </div>
-
-
+@*saltos para foramto *@
 <br />
 <br />
 <br />
